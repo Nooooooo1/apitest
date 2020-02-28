@@ -1,0 +1,8 @@
+config:
+    name: testcase description
+
+testcases:
+    create use1r:
+        testcase: test.yml
+        parameters:
+            user_id: [1001, 1002, 1003, 1004]
