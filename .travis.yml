@@ -1,5 +1,5 @@
 language: python
 sudo: required
-before_install: sudo pip install httprunner
+before_install: pip install httprunner
 script: hrun demo-quickstart-7.yml
 
