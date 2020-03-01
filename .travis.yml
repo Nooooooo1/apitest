@@ -11,8 +11,8 @@ after_success:
   - git init
   - git config user.name "No."
   - git config user.email "m18392283343@163.com"
-  - git add --all.
-  - git commit -m "[ci skip]  add report"
+  - git add reports
+  - git commit -m "  add report"
   - git push --force --quiet  "https://${git_token}@${git_addr}" master
 
 notifications:
