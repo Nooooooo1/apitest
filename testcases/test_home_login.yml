@@ -1,5 +1,5 @@
 - config:
-    name: testcase description
+    name: test_home_login
     variables: {}
 
 - test:
