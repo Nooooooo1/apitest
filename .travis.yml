@@ -1,5 +1,5 @@
 language: python
 sudo: required
 before_install: pip install httprunner
-script: hrun testcases/demo-quickstart-7.yml
+script: hrun testcases/test_home_login.yml
 

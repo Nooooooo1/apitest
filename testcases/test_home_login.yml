@@ -1,0 +1,24 @@
+- config:
+    name: testcase description
+    variables: {}
+
+- test:
+    name: /account/sign_in
+    request:
+        data:
+            commit: Sign In
+            user[login]: m18392283343@163.com
+            user[password]: nideyangzi1
+            user[remember_me]: '1'
+            utf8: ✓
+        headers:
+            Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+            User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36
+                (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36
+            X-CSRF-Token: 0zAKFDDPnNI2+Vwq/iwDPR9vo7KWobfNLAye4EaGBTlsSxMzTNf39lLF9z35f5mcROM7JgOP+azBCuDe84G+XA==
+            X-Requested-With: XMLHttpRequest
+        method: POST
+        url: https://testerhome.com/account/sign_in
+    validate:
+        - eq: [status_code, 200]
+        - eq: [headers.Content-Type, text/javascript; charset=utf-8]
