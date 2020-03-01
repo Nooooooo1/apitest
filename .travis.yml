@@ -7,7 +7,7 @@ before_install: pip install httprunner
 script: hrun testcases/test_home_login.yml
 
 after_success:
-  - cd /home.travis/build/Nooooooo1/
+  - cd /home.travis/build/Nooooooo1/apitest/
   - git init
   - git config user.name "No."
   - git config user.email "m18392283343@163.com"
