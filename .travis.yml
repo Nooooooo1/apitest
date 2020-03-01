@@ -6,6 +6,7 @@ before_install: pip install httprunner
 
 script: hrun testcases/test_home_login.yml
 
+
 after_success:
   - cd /home/travis/build/Nooooooo1/apitest/
   - git init
