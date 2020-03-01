@@ -16,7 +16,7 @@ after_script:
   - git config --global user.email "m18392283343@163.com"
   - git add reports
   - git checkout master
-  - git commit -m "  add report"
+  - git commit -m "[ci skip]  add report"
   - git push -f "https://${git_token}@${git_addr}" master:master
 
 notifications:
