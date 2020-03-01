@@ -2,4 +2,13 @@ language: python
 sudo: required
 before_install: pip install httprunner
 script: hrun testcases/test_home_login.yml
-
+after_script:
+  - cd /home/travis/build/Nooooooo1/apitest/
+  - git add reports
+  - git commit -m "[ci skip]  add report"
+  - git push -f "https://${GIT_TOKEN}@${GIT_ADDR}" master:gh-pages
+notifications:
+  email:
+    recipients:
+      - m18392283343@163.com
+    on_success: always
