@@ -16,7 +16,6 @@ after_script:
   - git config --global user.email "m18392283343@163.com"
   - git add reports
   - git commit -m "  add report"
-  - git checkout master
   - git push "https://${git_token}@${git_addr}" master:master
 
 notifications:
