@@ -4,9 +4,9 @@ before_install: pip install httprunner
 script: hrun testcases/test_home_login.yml
 after_script:
   - cd /home/travis/build/Nooooooo1/apitest/
-  - git add reports
+  - git add .
   - git commit -m "[ci skip]  add report"
-  - git push --force --quiet "https://${git_token}@${git_addr}" master:master
+  - git push -f "https://${git_token}@${git_addr}"
 notifications:
   email:
     recipients:
