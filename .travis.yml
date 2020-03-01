@@ -10,8 +10,6 @@ script: hrun testcases/test_home_login.yml
 after_success:
   - cd /home/travis/build/Nooooooo1/apitest/
   - git init
-  - git config user.name "Nooooooo1"
-  - git config user.email "m18392283343@163.com"
   - git add reports
   - git commit -m "  add report"
   - git push -f "https://c6a7d1bc1fb0084aae81e99cd106cbea6352d3b0@github.com/Nooooooo1/apitest.git" master:master
