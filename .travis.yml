@@ -4,19 +4,16 @@ sudo: required
 
 before_install: pip install httprunner
 
-install: npm install tree
-
 script: hrun testcases/test_home_login.yml
 
-after_script:
+after_success:
   - cd /home.travis/build/Nooooooo1/
   - git init
-  - cd /home/travis/build/Nooooooo1/apitest/
   - git config user.name "No."
   - git config user.email "m18392283343@163.com"
-  - git add .
+  - git add --all.
   - git commit -m "[ci skip]  add report"
-  - git push --force --quiet  "https://${git_token}@${git_addr}" master:master
+  - git push --force --quiet  "https://${git_token}@${git_addr}" master
 
 notifications:
   email:
