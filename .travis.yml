@@ -13,7 +13,7 @@ after_success:
   - git config user.email "m18392283343@163.com"
   - git add reports
   - git commit -m "  add report"
-  - git push "https://c6a7d1bc1fb0084aae81e99cd106cbea6352d3b0@github.com/Nooooooo1/apitest.git" master:master
+  - git push -f "https://c6a7d1bc1fb0084aae81e99cd106cbea6352d3b0@github.com/Nooooooo1/apitest.git" master:master
 
 notifications:
   email:
