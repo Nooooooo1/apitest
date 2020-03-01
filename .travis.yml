@@ -6,7 +6,7 @@ after_script:
   - cd /home/travis/build/Nooooooo1/apitest/
   - git add .
   - git commit -m "[ci skip]  add report"
-  - git push -f "https://${git_token}@${git_addr}"
+  - git push -f "https://${git_token}@${git_addr}" master:master
 notifications:
   email:
     recipients:
