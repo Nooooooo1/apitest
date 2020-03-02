@@ -19,3 +19,19 @@ def get_sign(*args):
     sign_key = SECRET_KEY.encode('ascii')
     sign = hmac.new(sign_key, content, hashlib.sha1).hexdigest()
     return sign
+
+def get_content_type():
+    content_type = "application/x-www-form-urlencoded; charset=UTF-8"
+    return content_type
+
+def get_password():
+    content_type = "nideyangzi1"
+    return content_type
+
+def hook_print(*args):
+    if args == "setup":
+        pass
+    elif args =="teardown":
+        pass
+    return
+

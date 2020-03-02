@@ -1,9 +1,13 @@
 - config:
     name: test_home_login
     base_url: https://testerhome.com/
-    variables: {}
-    user_name: m18392283343@163.com
-    user_password: nideyangzi1
+    variables:
+        user_name: $username
+        user_password: ${get_password()}
+    setup_hooks:
+        - ${hook_print(setup)}
+    teardown_hooks:
+        - ${hook_print(teardown)}
 - test:
     name: /account/sign_in
     request:

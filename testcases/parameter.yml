@@ -1,0 +1,9 @@
+config:
+    name: test_home_login
+
+testcases:
+    login:
+        testcase: testcases/test_home_login.yml
+        parameters:
+            username-password:
+            - ["m18392283343@163.com", "nideyangzi1"]
