@@ -2,14 +2,15 @@
     name: test_home_login
     base_url: https://testerhome.com/
     variables: {}
-
+    user_name: m18392283343@163.com
+    user_password: nideyangzi1
 - test:
     name: /account/sign_in
     request:
         data:
             commit: Sign In
-            user[login]: m18392283343@163.com
-            user[password]: nideyangzi1
+            user[login]: $user_name
+            user[password]: $user_password
             user[remember_me]: '1'
             utf8: ✓
         headers:
