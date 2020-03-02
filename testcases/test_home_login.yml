@@ -1,5 +1,6 @@
 - config:
     name: test_home_login
+    base_url: https://testerhome.com/
     variables: {}
 
 - test:
@@ -18,7 +19,7 @@
             X-CSRF-Token: 0zAKFDDPnNI2+Vwq/iwDPR9vo7KWobfNLAye4EaGBTlsSxMzTNf39lLF9z35f5mcROM7JgOP+azBCuDe84G+XA==
             X-Requested-With: XMLHttpRequest
         method: POST
-        url: https://testerhome.com/account/sign_in
+        url: account/sign_in
     validate:
         - eq: [status_code, 200]
         - eq: [headers.Content-Type, text/javascript; charset=utf-8]
