@@ -9,9 +9,6 @@ script: hrun testcases/test_home_login.yml
 
 after_script:
   - cd /home/travis/build/Nooooooo1/apitest/
-#  - git init
-#  - cd /home/travis/build/Nooooooo1/apitest/reports
-#  - ls
   - git config --global user.name "Nooooooo1"
   - git config --global user.email "m18392283343@163.com"
   - git add reports
