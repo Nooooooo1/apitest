@@ -8,7 +8,6 @@ script:
   - hrun testcases/test_home_login1.yml
   - hrun testcases/parameter.yml
 
-
 after_script:
   - cd /home/travis/build/Nooooooo1/apitest/
   - git config --global user.name "Nooooooo1"
